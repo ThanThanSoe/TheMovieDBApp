@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/darkest"
+    android:paddingLeft="@dimen/margin_medium"
+    android:paddingTop="@dimen/margin_medium"
+    tools:context=".activities.MainActivity">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/black"
+        android:layout_marginBottom="@dimen/margin_xxlarge_2x"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_medium_2" />
+
+    </FrameLayout>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:backgroundTint="@color/darkest"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/margin_medium"
+            android:paddingBottom="@dimen/margin_medium"
+            android:weightSum="5">
+
+            <TextView
+                android:id="@+id/babHome"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_home"
+                android:gravity="center"
+                android:text="@string/bab_home_menu"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/babSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_search"
+                android:gravity="center"
+                android:text="@string/bab_search_menu"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/babComingSoon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_play"
+                android:gravity="center"
+                android:text="@string/bab_coming_soon"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/babDownload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_download"
+                android:gravity="center"
+                android:text="@string/bab_download"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_small" />
+
+            <TextView
+                android:id="@+id/babMore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:drawableTop="@drawable/ic_more"
+                android:gravity="center"
+                android:text="@string/bab_more"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/text_small" />
+
+        </LinearLayout>
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
